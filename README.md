@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# `Audio Editing Application`
 
-## Getting Started
+## `Project Overview`
 
-First, run the development server:
+- This project is an audio editing application built using Mantine UI and WaveSurfer.js. The application allows users to upload audio files, visualize the waveform, perform operations such as cutting, and save the edited audio.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## `Features`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Audio Upload: Users can upload audio files in formats like MP3 and WAV.
+- Waveform Visualization: The application visualizes the audio file's waveform using WaveSurfer.js, enabling easy editing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-Audio Cutting: Users can cut specific segments of the audio file by selecting regions on the waveform.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-Audio Export: The edited audio can be saved in the desired format (e.g., MP3, WAV).
 
-## Learn More
+## `Tech Stack`
 
-To learn more about Next.js, take a look at the following resources:
+- Frontend Framework: Next.js with TypeScript
+- UI Library: Mantine UI for styling and components
+- Audio Processing: WaveSurfer.js for audio waveform visualization and manipulation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Plugins: Regions Plugin for selecting and editing specific regions within the audio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## `Usage`
 
-## Deploy on Vercel
+## Upload an Audio File:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Click the "Upload Audio" button to upload an audio file.
+  The waveform of the audio file will be displayed on the screen.
+  Edit the Audio:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Use the "Cut" button to select and cut specific regions of the audio using WaveSurfer.js.
+  Save the Edited Audio:
+
+- Click the "Save" button to download the edited audio in the selected format.
+
+# `All The Features Are Not Implemented Yet`

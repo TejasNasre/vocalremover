@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Button from "@/components/Button/Button";
 import { IconLock } from "@tabler/icons-react";
 
@@ -40,18 +39,6 @@ function Home() {
             }}
           >
             <div>How it works</div>
-            <div>
-              <Link
-                href={"https://vocalremover.org/joiner"}
-                style={{
-                  textDecoration: "none",
-                  color: "#D8D8E2",
-                  fontWeight: "bold",
-                }}
-              >
-                Joiner
-              </Link>
-            </div>
           </div>
           <div
             style={{
@@ -64,9 +51,12 @@ function Home() {
               marginTop: "20px",
             }}
           >
-            <h1 style={{ fontSize: "46px", margin: "0" }}>Audio Cutter</h1>
+            <h1 style={{ fontSize: "46px", margin: "0" }}>
+              Audio Speed and Pitch Changer
+            </h1>
             <p style={{ fontSize: "23px", margin: "0" }}>
-              Free editor to trim and cut any audio file online
+              Changes pitch and tempo of the song by adjusting musical key and
+              bpm sliders
             </p>
             <Button />
           </div>
@@ -80,7 +70,7 @@ function Home() {
           }}
         >
           <p style={{ fontSize: "35px", fontWeight: "500" }}>
-            How to cut audio
+            Free Online Pitch Shifter
           </p>
           <div
             style={{
@@ -92,18 +82,30 @@ function Home() {
             }}
           >
             <p>
-              This app can be used to trim and/or cut audio tracks, remove an
-              audio fragments. Fade in and fade out your music easily to make
-              the audio harmoniously.
+              This app changes the song pitch and/or playback speed using one of
+              the best pitch shifting algorithms. The musical key, scale, and
+              bpm will be automatically detected.
             </p>
             <p>
-              It fast and easy to use. You can save the audio file in any format
-              (codec parameters are configured)
+              You can easily transpose music to a different key and change the
+              tempo by adjusting the pitch shifter key and bpm sliders.
             </p>
-            <p>
-              It works directly in the browser, no needs to install any
-              software, is available for mobile devices.
-            </p>
+          </div>
+          <p style={{ fontSize: "35px", fontWeight: "500" }}>Features</p>
+          <div
+            style={{
+              backgroundColor: "#1F1F28",
+              borderLeft: "4px solid #665DC3",
+              padding: "8px 30px",
+              marginBottom: "20px",
+              fontSize: "25px",
+            }}
+          >
+            <ul>
+              <li>Analyzes music and finds musical key, scale and bpm</li>
+              <li>Changes audio pitch</li>
+              <li>Speed up or slow down music playback speed</li>
+            </ul>
           </div>
           <div style={{ marginTop: "30px" }}>
             <div

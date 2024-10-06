@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Button from "@/components/Button/Button";
-import { IconLock } from "@tabler/icons-react";
 
-function Home() {
+function page() {
   return (
     <>
       <div
@@ -40,18 +38,6 @@ function Home() {
             }}
           >
             <div>How it works</div>
-            <div>
-              <Link
-                href={"https://vocalremover.org/joiner"}
-                style={{
-                  textDecoration: "none",
-                  color: "#D8D8E2",
-                  fontWeight: "bold",
-                }}
-              >
-                Joiner
-              </Link>
-            </div>
           </div>
           <div
             style={{
@@ -64,9 +50,9 @@ function Home() {
               marginTop: "20px",
             }}
           >
-            <h1 style={{ fontSize: "46px", margin: "0" }}>Audio Cutter</h1>
+            <h1 style={{ fontSize: "46px", margin: "0" }}>Splitter AI</h1>
             <p style={{ fontSize: "23px", margin: "0" }}>
-              Free editor to trim and cut any audio file online
+              Split music into separated parts with AI-Powered algorithms
             </p>
             <Button />
           </div>
@@ -80,7 +66,7 @@ function Home() {
           }}
         >
           <p style={{ fontSize: "35px", fontWeight: "500" }}>
-            How to cut audio
+            AI-Powered Music Separator
           </p>
           <div
             style={{
@@ -92,42 +78,16 @@ function Home() {
             }}
           >
             <p>
-              This app can be used to trim and/or cut audio tracks, remove an
-              audio fragments. Fade in and fade out your music easily to make
-              the audio harmoniously.
+              This app allows to separate music into an individual streams such
+              as vocal, bass, percussion, and lets you rebalance their
+              individual volumes. This is the simplest way to get multitracks
+              from any song.
             </p>
             <p>
-              It fast and easy to use. You can save the audio file in any format
-              (codec parameters are configured)
+              Once you choose a song, artificial intelligence will separate
+              music into stems: vocals, bass, drums, others. Processing usually
+              takes about 1 minute.
             </p>
-            <p>
-              It works directly in the browser, no needs to install any
-              software, is available for mobile devices.
-            </p>
-          </div>
-          <div style={{ marginTop: "30px" }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: "25px",
-                fontWeight: "500",
-                marginBottom: "10px",
-              }}
-            >
-              <IconLock size={30} style={{ marginRight: "10px" }} />
-              Privacy and Security Guaranteed
-            </div>
-            <div
-              style={{
-                backgroundColor: "#1F1F28",
-                borderLeft: "4px solid #665DC3",
-                padding: "8px 30px",
-                fontSize: "25px",
-              }}
-            >
-              This is serverless app. Your files does not leave your device
-            </div>
           </div>
         </div>
       </div>
@@ -135,4 +95,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default page;

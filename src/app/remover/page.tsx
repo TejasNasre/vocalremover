@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Button from "@/components/Button/Button";
-import { IconLock } from "@tabler/icons-react";
 
-function Home() {
+function page() {
   return (
     <>
       <div
@@ -40,18 +38,6 @@ function Home() {
             }}
           >
             <div>How it works</div>
-            <div>
-              <Link
-                href={"https://vocalremover.org/joiner"}
-                style={{
-                  textDecoration: "none",
-                  color: "#D8D8E2",
-                  fontWeight: "bold",
-                }}
-              >
-                Joiner
-              </Link>
-            </div>
           </div>
           <div
             style={{
@@ -64,9 +50,12 @@ function Home() {
               marginTop: "20px",
             }}
           >
-            <h1 style={{ fontSize: "46px", margin: "0" }}>Audio Cutter</h1>
+            <h1 style={{ fontSize: "46px", margin: "0" }}>
+              Vocal Remover and Isolation
+            </h1>
             <p style={{ fontSize: "23px", margin: "0" }}>
-              Free editor to trim and cut any audio file online
+              Separate voice from music out of a song free with powerful AI
+              algorithms
             </p>
             <Button />
           </div>
@@ -80,7 +69,7 @@ function Home() {
           }}
         >
           <p style={{ fontSize: "35px", fontWeight: "500" }}>
-            How to cut audio
+            Remove vocals from a song
           </p>
           <div
             style={{
@@ -92,42 +81,19 @@ function Home() {
             }}
           >
             <p>
-              This app can be used to trim and/or cut audio tracks, remove an
-              audio fragments. Fade in and fade out your music easily to make
-              the audio harmoniously.
+              This free online application will help remove vocals from a song
+              by creating karaoke.
             </p>
             <p>
-              It fast and easy to use. You can save the audio file in any format
-              (codec parameters are configured)
+              Once you choose a song, artificial intelligence will separate the
+              vocals from the instrumental ones. You will get two tracks - a
+              karaoke version of your song (no vocals) and acapella version
+              (isolated vocals).
             </p>
             <p>
-              It works directly in the browser, no needs to install any
-              software, is available for mobile devices.
+              Despite the complexity and high cost of service, you can use it
+              absolutely free. Processing usually takes about 10 seconds.
             </p>
-          </div>
-          <div style={{ marginTop: "30px" }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: "25px",
-                fontWeight: "500",
-                marginBottom: "10px",
-              }}
-            >
-              <IconLock size={30} style={{ marginRight: "10px" }} />
-              Privacy and Security Guaranteed
-            </div>
-            <div
-              style={{
-                backgroundColor: "#1F1F28",
-                borderLeft: "4px solid #665DC3",
-                padding: "8px 30px",
-                fontSize: "25px",
-              }}
-            >
-              This is serverless app. Your files does not leave your device
-            </div>
           </div>
         </div>
       </div>
@@ -135,4 +101,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default page;

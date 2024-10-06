@@ -49,7 +49,7 @@ function Home() {
                   fontWeight: "bold",
                 }}
               >
-                Joiner
+                Tap Tempo
               </Link>
             </div>
           </div>
@@ -64,9 +64,11 @@ function Home() {
               marginTop: "20px",
             }}
           >
-            <h1 style={{ fontSize: "46px", margin: "0" }}>Audio Cutter</h1>
+            <h1 style={{ fontSize: "46px", margin: "0" }}>
+              Song Key and BPM Finder{" "}
+            </h1>
             <p style={{ fontSize: "23px", margin: "0" }}>
-              Free editor to trim and cut any audio file online
+              Analyzes music and finds Key, Scale and BPM for any song
             </p>
             <Button />
           </div>
@@ -80,7 +82,7 @@ function Home() {
           }}
         >
           <p style={{ fontSize: "35px", fontWeight: "500" }}>
-            How to cut audio
+            How to find Key & BPM
           </p>
           <div
             style={{
@@ -92,17 +94,41 @@ function Home() {
             }}
           >
             <p>
-              This app can be used to trim and/or cut audio tracks, remove an
-              audio fragments. Fade in and fade out your music easily to make
-              the audio harmoniously.
+              This app analyzes music and estimates pitch and tempo [e.g. A♭
+              major, 120 bpm]. You can upload multiple files at once. Processing
+              time takes a few seconds.
             </p>
+          </div>
+          <p style={{ fontSize: "35px", fontWeight: "500" }}>
+            Change Key & BPM
+          </p>
+          <div
+            style={{
+              backgroundColor: "#1F1F28",
+              borderLeft: "4px solid #665DC3",
+              padding: "8px 30px",
+              marginBottom: "20px",
+              fontSize: "25px",
+            }}
+          >
             <p>
-              It fast and easy to use. You can save the audio file in any format
-              (codec parameters are configured)
+              Using Pitch Shifter tool you can transpose song to a different key
+              and tempo.
             </p>
+          </div>
+          <p style={{ fontSize: "35px", fontWeight: "500" }}>Tap tempo</p>
+          <div
+            style={{
+              backgroundColor: "#1F1F28",
+              borderLeft: "4px solid #665DC3",
+              padding: "8px 30px",
+              marginBottom: "20px",
+              fontSize: "25px",
+            }}
+          >
             <p>
-              It works directly in the browser, no needs to install any
-              software, is available for mobile devices.
+              Tap tempo tool allows you to calculate tempo beats per minute by
+              tapping space key to the rhythm or beat.
             </p>
           </div>
           <div style={{ marginTop: "30px" }}>
