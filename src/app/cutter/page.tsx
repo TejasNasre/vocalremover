@@ -6,7 +6,6 @@ import {
   Text,
   Stack,
   Group,
-  Container,
   Title,
   Select,
 } from "@mantine/core";
