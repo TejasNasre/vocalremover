@@ -26,7 +26,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/LanguageContext.js"
+    "src/components/LanguageContext.js",
+    "src/components/AudioWaveform.jsx",
+    "src/components/Button/Button.jsx",
+    "src/components/Button/Button.jsx"
   ],
   "exclude": ["node_modules"]
 }

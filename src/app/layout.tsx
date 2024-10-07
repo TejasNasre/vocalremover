@@ -4,6 +4,7 @@ import "@mantine/core/styles.css";
 import Navbar from "@/components/Navbar/Navbar";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import FileProvider from "../contexts/fileContext";
 
 export const metadata = {
   title: "Vocalremover Clone",
@@ -24,8 +25,7 @@ export default function RootLayout({
         <MantineProvider defaultColorScheme="dark">
           <div style={{ display: "flex", height: "100vh" }}>
             <Navbar />
-
-            {children}
+            <FileProvider>{children}</FileProvider>
           </div>
         </MantineProvider>
       </body>
